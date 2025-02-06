@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TacoEditor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e187bc5b393d42704a935a0dcb1abf0a90d73676")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c51bc35b475868092260c150828237503940f7e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TacoEditor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TacoEditor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

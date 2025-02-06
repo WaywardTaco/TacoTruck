@@ -19,10 +19,10 @@ namespace TacoEditor.GameProject
         public byte[] Screenshot { get; set; }
         public string IconFilePath { get; set; }
         public string ScreenshotFilePath { get; set; }
-        public string ProjectFilPath { get; set; }
+        public string ProjectFilePath { get; set; }
     }
 
-    public class CreateProject : ViewModelBase
+    public class NewProject : ViewModelBase
     {
         // TODO : Get Path from Installation
         private readonly string _templatePath = @"..\..\TacoEditor\ProjectTemplates";
@@ -117,7 +117,48 @@ namespace TacoEditor.GameProject
 
             return IsValid;
         }
-        public CreateProject()
+
+        public string CreateProject(ProjectTemplate template)
+        {
+            ValidateProjectPath();
+            if(!IsValid) return string.Empty;
+
+            if (!Path.EndsInDirectorySeparator(ProjectPath)) ProjectPath += @"\";
+            var path = $@"{ProjectPath}{ProjectName}\";
+
+            try
+            {
+                if(!Directory.Exists(path)) Directory.CreateDirectory(path);
+                foreach(var folder in template.Folders)
+                {
+                    Directory.CreateDirectory(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(path),folder)));
+                }
+
+                var dirInfo = new DirectoryInfo(path + @".Taco\");
+                dirInfo.Attributes |= FileAttributes.Hidden;
+                File.Copy(template.IconFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "icon.png")));
+                File.Copy(template.ScreenshotFilePath, Path.GetFullPath(Path.Combine(dirInfo.FullName, "screenshot.png")));
+                
+                var projectXml = File.ReadAllText(template.ProjectFilePath);
+                projectXml = string.Format(projectXml, ProjectName, ProjectPath);
+                var projectPath = Path.GetFullPath(Path.Combine(path, $"{ProjectName}{Project.Extension}"));
+                File.WriteAllText(projectPath, projectXml);
+                
+                /*
+                var project = new Project(ProjectName, path);
+                Serializer.ToFile(project, path + $"{ProjectName}" + Project.Extension);
+                */
+                return path;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                // TODO : Log error properly
+                return string.Empty;
+            }
+        }
+
+        public NewProject()
         {
             ProjectTemplates = new ReadOnlyObservableCollection<ProjectTemplate>(_projectTemplates);
 
@@ -132,7 +173,7 @@ namespace TacoEditor.GameProject
                     template.Icon = File.ReadAllBytes(template.IconFilePath);
                     template.ScreenshotFilePath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(file), "screenshot.jpg"));
                     template.Screenshot = File.ReadAllBytes(template.ScreenshotFilePath);
-                    template.ProjectFilPath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(file), template.ProjectFile));
+                    template.ProjectFilePath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(file), template.ProjectFile));
                     _projectTemplates.Add(template);
                 }
                 ValidateProjectPath();

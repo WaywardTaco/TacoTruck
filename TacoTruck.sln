@@ -1,54 +1,44 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.6.33815.320
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacoEditor", "TacoEditor\TacoEditor.csproj", "{D5BD0636-F039-427D-90BA-2639B25239C8}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE871220-71D4-4119-BFBA-94CFA3785C3A}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Debug|Any CPU.Build.0 = Debug|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Debug|x64.ActiveCfg = Debug|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Debug|x64.Build.0 = Debug|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Debug|x86.ActiveCfg = Debug|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Release|Any CPU.ActiveCfg = Release|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Release|Any CPU.Build.0 = Release|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Release|x64.ActiveCfg = Release|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Release|x64.Build.0 = Release|x64
-		{83633C9B-02AF-4DD7-99FC-E4CC53E5E113}.Release|x86.ActiveCfg = Release|x64
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Debug|x64.Build.0 = Debug|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Debug|x86.Build.0 = Debug|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Release|x64.ActiveCfg = Release|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Release|x64.Build.0 = Release|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Release|x86.ActiveCfg = Release|Any CPU
-		{D5BD0636-F039-427D-90BA-2639B25239C8}.Release|x86.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F0B40A1A-6748-4776-A092-99207945AFCE}
-	EndGlobalSection
-EndGlobal
+﻿THEME: Product Feature DONE
+
+
+THEME: Cancelled Company
+
+COMPANY: Pay Pay Holdings Inc.
+PPH Falls as Financers Back Out
+Due to PPH's stance against certain large enterprises, investors pull out, out of fear to associate with detrimental organizational agendas
+
+COMPANY: Online Brokers Group
+OBG CEO Goes on Another Tirade
+The 80-something CEO of OBG in a press conference last week went on a less than stellar tirade which used outdate language and showed their outdated mindset
+
+COMPANY: Software Tech Inc.
+SFI Released Apology, Bombed
+SFI's recent apology letter to its customers reek of self-righteous behavior near universally associated with the company leads to backlash
+
+
+THEME: RESOURCE SHORTAGE
+
+COMPANY: Leaders of Market Echange
+LME Shares Concerns Over Market Slow
+LME CEO shared their concerns regarding the recent slow in the market, citing that slower markets reduce capital flow nationally, hindering 
+
+COMPANY: Pay Pay Holdings Inc.
+Bank Pullouts Cause PPH to Scramble
+Due to mass withdrawals of cash, PPH finds itself struggling to maintain its market dominance amidst claims of its corruption and exclusionary tactics
+
+COMPANY: Block International Dealings
+Materials Shortage, BID Slows
+Global material shortages leads to the giant, BID, to slow its growth as the titan fails to secure necessary resources for its major projects
+
+
+COMPANY: Online Brokers Group
+Poached Talent Harms OBG
+OBG's stock drop as their latest leading talent is plundered by rival brokerages, truly a shameful loss once more for the group amidst a so-so year
+
+COMPANY: Software Tech Inc.
+Silicon Rationing Harm SFI
+Due to the government's latest ration on resources, amongst which include silicon. Software Tech Inc. is forced to slow down their development
+
+COMPANY: Long Distance Deigital
+Pirated Import Hurts LDD
+LDD's latest materials import was once again plundered by pirates. This setback holds back the company's pushes to continue their intercontinental
